@@ -1,3 +1,6 @@
+import { FbBaseService } from './../../services/fb-base.service';
+import { Observable } from 'rxjs';
+import { DetectedIssue } from './../../shared/models/detected-Issue';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FinalIssueComponent implements OnInit {
 
-  constructor() { }
+  list: Observable<DetectedIssue[]> | null = null;
+  constructor(private service: FbBaseService) { }
 
+  get(){
+    this.list = this.service.get('issues');
+  }
   ngOnInit(): void {
+    this.get()
   }
 
 }

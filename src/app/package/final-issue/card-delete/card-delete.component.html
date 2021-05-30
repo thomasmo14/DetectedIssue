@@ -1,0 +1,28 @@
+<mat-card *ngIf="hiba2">
+    <mat-card-header>
+        <mat-card-title>
+            <div *ngIf="hiba2.author; else elseBlock">
+                <div *ngIf="hiba2.author">       
+                  Assigner: {{hiba2.author.display}}      
+                </div>
+            </div>
+            <ng-template #elseBlock>
+                <div>
+                   Unnamed
+                </div>
+            </ng-template>
+        </mat-card-title>
+        <mat-card-subtitle></mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <p>ID: {{hiba2.id}}</p>
+        <p>Status: {{hiba2.status}}</p>
+        <p>Details: {{hiba2.details}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button (click)='deleteIssue(hiba2.id)'>delete</button>
+    </mat-card-actions>
+    <mat-card-actions>
+        <button mat-button >Update</button>
+    </mat-card-actions>
+</mat-card>

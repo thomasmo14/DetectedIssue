@@ -23,4 +23,3 @@ export class AddIssueComponent implements OnInit {
   ngOnInit(): void{}
 
 }
-

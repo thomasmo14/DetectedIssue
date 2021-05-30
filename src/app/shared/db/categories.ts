@@ -2,11 +2,11 @@ import { Categories } from "../models/categories-model";
 
 export const CATEGORIES: Categories[] = [
     {
-        title: 'Active Issues',
+        title: 'All Issues',
         url: 'active'
     },
     {
-        title: 'Finished Issues',
+        title: 'Update Issues',
         url: 'final'
     },
     {

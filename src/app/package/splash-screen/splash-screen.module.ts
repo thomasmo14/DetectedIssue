@@ -1,7 +1,9 @@
+import { MatIconModule } from '@angular/material/icon';
 import { SplashScreenRoutingModule } from './splash-screen-routing.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SplashScreenComponent } from './splash-screen.component';
+
 
 
 
@@ -10,7 +12,7 @@ import { SplashScreenComponent } from './splash-screen.component';
     SplashScreenComponent
   ],
   imports: [
-    CommonModule,SplashScreenRoutingModule
+    CommonModule,SplashScreenRoutingModule,MatIconModule
   ]
 })
 export class SplashScreenModule { }
