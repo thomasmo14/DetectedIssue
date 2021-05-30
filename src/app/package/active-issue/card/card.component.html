@@ -1,0 +1,28 @@
+<mat-card *ngIf="hiba">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>
+                <div *ngIf="hiba.author; else elseBlock">
+                    <div *ngIf="hiba.author">       
+                      {{hiba.author.display}}      
+                    </div>
+                </div>
+                <ng-template #elseBlock>
+                    <div>
+                        Ismeretlen
+                    </div>
+                </ng-template>
+            </mat-card-title>
+            <mat-card-subtitle></mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <p>{{hiba.id}}</p>
+            <p>{{hiba.status}}</p>
+            <p>{{hiba.details}}</p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button>delete</button>
+        </mat-card-actions>
+    </mat-card>
+
+</mat-card>

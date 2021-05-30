@@ -1,0 +1,19 @@
+<div class="container">
+  <h2 class="title">Add issue</h2>
+  <form [formGroup]="form" (ngSubmit) = "save()">  
+    <mat-label>Assigner</mat-label>
+      <span formGroupName = "author">
+    <input matInput placeholder="Assigner" focus formControlName="display" required>
+  </span>
+     <mat-label>Status</mat-label>
+     <select formControlName= "status">
+      <option value="registered">registered</option>
+      <option value="preliminary">preliminary</option>
+      <option value="final">final</option>
+    </select>
+    <mat-label>Description</mat-label>
+    <textarea placeholder="Add issue descripton" formControlName="details" matInput cdkTextareaAutosize
+    cdkAutosizeMinRows="2" cdkAutosizeMaxRows="5"></textarea>
+    <button mat-button class="send" type = "submit" [routerLink] ="['']">Add</button>
+  </form>            
+</div>

@@ -1,0 +1,40 @@
+[mat-button] {
+    text-transform: capitalize;
+  }
+  
+  [mat-button] {
+    background-color: rgb(5, 143, 33);
+    margin-right: 16px;
+    width: 120px;
+    height: 40px;
+  }
+  
+  a[mat-button] {
+    font-size: xx-large;
+    background-color: rgb(5, 143, 33);
+  }
+  
+  .active {
+    border-bottom: rgba(2, 102, 41, 0.788) 1px solid;
+    border-radius: 0;
+  }
+  
+  .tools{
+      background-color: rgb(42, 71, 201);
+  }
+
+  .button{
+      background-color: rgb(29, 1, 1);
+  }
+
+  mat-toolbar {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .rows{
+      display: flex;
+      flex-wrap: wrap;
+  }
