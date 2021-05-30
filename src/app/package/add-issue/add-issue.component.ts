@@ -1,6 +1,6 @@
 import { FbBaseService } from './../../services/fb-base.service';
-import { Identifier, DetectedIssue } from './../../shared/models/detected-Issue';
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { DetectedIssue } from './../../shared/models/detected-Issue';
+import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators} from '@angular/forms';
 
 @Component({
